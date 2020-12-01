@@ -9,6 +9,7 @@ export default class Toggle {
             nav: 'data-nav',
             open: 'open'
         };
+
         this.hamburger = document.querySelector(`[${this.selectors.hamburger}]`);
         this.nav = document.querySelector(`[${this.selectors.nav}]`);
 
@@ -20,18 +21,17 @@ export default class Toggle {
         return true;
     }
 
+    // Hamburger event listener
     setupEvents() {
         this.hamburger.addEventListener('click', () => this.toggle());
     }
 
+    // Toggle hamburger menu
     toggle() {
-        if (!this.open) {
-            this.show();
-        } else {
-            this.hide();
-        }
+        !this.open ? this.show() : this.hide();
     }
 
+    // Animation while hamburger is open
     show() {
         if (this.timer) return false;
 
@@ -40,11 +40,13 @@ export default class Toggle {
         this.nav.style.transition = this.transition;
         this.open = true;
     }
+
+    // Animation while hamburger is closed
     hide() {
         this.hamburger.classList.remove(this.selectors.open);
         this.nav.style.left = '100vw';
         this.timer = window.setTimeout(() => {
-            this.nav.style.left = '100vw';
+            this.nav.style.left = '-100vw';
             this.nav.style.transition = '';
             this.timer = false;
         }, 250);
