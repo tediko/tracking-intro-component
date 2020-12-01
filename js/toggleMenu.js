@@ -7,7 +7,9 @@ export default class Toggle {
         this.selectors = {
             hamburger: 'data-hamburger',
             nav: 'data-nav',
-            open: 'open'
+            open: 'open',
+            active: 'header__nav--active',
+            close: 'header__nav--close'
         };
 
         this.hamburger = document.querySelector(`[${this.selectors.hamburger}]`);
@@ -36,18 +38,17 @@ export default class Toggle {
         if (this.timer) return false;
 
         this.hamburger.classList.add(this.selectors.open);
-        this.nav.style.left = '0';
-        this.nav.style.transition = this.transition;
+        this.nav.classList.add(this.selectors.active);
         this.open = true;
     }
 
     // Animation while hamburger is closed
     hide() {
         this.hamburger.classList.remove(this.selectors.open);
-        this.nav.style.left = '100vw';
+        this.nav.classList.add(this.selectors.close);
         this.timer = window.setTimeout(() => {
-            this.nav.style.left = '-100vw';
-            this.nav.style.transition = '';
+            this.nav.classList.remove(this.selectors.active);
+            this.nav.classList.remove(this.selectors.close);
             this.timer = false;
         }, 250);
         this.open = false;
