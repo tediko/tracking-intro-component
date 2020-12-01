@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 24px;
   height: 16px;
   border: none;
+  outline: none;
   background: transparent;
   cursor: pointer;
 }
