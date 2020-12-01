@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+html {
+    font-size: 18px;
+}
+
+body {
+    position: relative; 
+    min-width: 100vh;
+    font-family: $ff-primary;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $ff-secondary;
+}
