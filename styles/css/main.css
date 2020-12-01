@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@keyframes nav-slideIn {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nav-slideOut {
+  0% {
+    visibility: visible;
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +43,7 @@ body {
   min-height: 100vh;
   font-family: "Barlow", sans-serif;
   padding: 0 32px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,32 +76,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__nav {
   position: absolute;
+  visibility: hidden;
   background: #fff;
   top: 69px;
   width: 100%;
   padding: 32px 24px;
   box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.1);
-  transform: translateX(1000px);
-  transition: transform 500ms ease-in;
-  opacity: 0;
 }
 
 .header__nav--active {
-  transform: translate(0);
-  opacity: 1;
+  animation: nav-slideIn 800ms forwards;
+}
+
+.header__nav--disable {
+  animation: nav-slideOut 800ms;
 }
 
 @media (min-width: 769px) {
   .header__nav {
     position: relative;
+    visibility: visible;
     background: transparent;
     top: unset;
     box-shadow: none;
     width: auto;
     padding: 0;
-    transform: translate(0);
-    opacity: 1;
-    transition: transform 0ms;
   }
 }
 
