@@ -7,8 +7,9 @@ html {
 
 body {
     position: relative; 
-    min-width: 100vh;
+    min-height: 100vh;
     font-family: $ff-primary;
+    padding: 0 32px;
 }
 
 h1,h2,h3,h4,h5,h6 {
