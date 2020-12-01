@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.header__nav--active {
+  left: 0;
+  transition: left 250ms ease-in;
+}
+
+.header__nav--close {
+  left: 100vw;
+}
+
 .header__nav-list {
   display: flex;
   flex-flow: column;

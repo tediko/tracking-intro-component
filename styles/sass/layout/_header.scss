@@ -36,6 +36,15 @@
             width: auto;
             padding: 0;
         }
+
+        &--active {
+            left: 0;
+            transition: left 250ms ease-in;
+        }
+
+        &--close {
+            left: 100vw;
+        }
     }
 
     &__nav-list {
@@ -118,7 +127,7 @@
                 transform: rotate(-45deg) translate(35px, 35px);
             }
         }
-                
+
         @media (min-width: 769px) {
             display: none;
         }
