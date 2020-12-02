@@ -78,6 +78,11 @@
         letter-spacing: 1px;
         color: $c-blue-very-dark;
 
+        &:focus {
+            outline-offset: 5px;
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         &--gray {
             color: $c-blue-grayish;
         }
@@ -127,6 +132,11 @@
         border: none;
         background: transparent;
         cursor: pointer;
+
+        &:focus {
+            outline-offset: 5px;
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+        }
 
         &.open {
             #{$root}__nav-menu-hamburger {
