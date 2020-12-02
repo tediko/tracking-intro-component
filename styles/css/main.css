@@ -209,4 +209,141 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav-menu-hamburger::after {
   transform: translateY(7px);
 }
+
+.intro__container {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 769px) {
+  .intro__container {
+    flex-flow: row;
+  }
+}
+
+.intro__hero {
+  margin-left: -24px;
+  margin-bottom: 80px;
+}
+
+.intro__hero img {
+  width: 150%;
+  max-width: 800px;
+}
+
+@media (min-width: 769px) {
+  .intro__hero {
+    order: 2;
+    margin: 46px 0 0 28px;
+  }
+  .intro__hero img {
+    width: initial;
+    max-width: initial;
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-flow: column;
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .intro__content {
+    margin-top: 96px;
+    flex: 1 0 50%;
+  }
+}
+
+.intro__new {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.89rem;
+}
+
+.intro__new-icon {
+  color: #fff;
+  padding: 3px 12px;
+  margin-right: 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  background: #242942;
+}
+
+.intro__new-text {
+  color: #a0a1ac;
+  letter-spacing: 4px;
+}
+
+.intro__heading {
+  margin-bottom: 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 769px) {
+  .intro__heading {
+    font-size: 3.44rem;
+    line-height: 64px;
+  }
+}
+
+.intro__subheading {
+  margin-bottom: 32px;
+  max-width: 280px;
+  text-transform: none;
+  color: #5b5f71;
+  line-height: 25px;
+}
+
+@media (min-width: 769px) {
+  .intro__subheading {
+    margin-bottom: 66px;
+  }
+}
+
+.intro__cta {
+  display: flex;
+  align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.intro__cta-link {
+  color: #fff;
+  background: #ff5c5c;
+  padding: 14px 12px;
+  margin-right: 18px;
+  font-size: 0.83rem;
+  text-decoration: none;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 769px) {
+  .intro__cta-link {
+    font-size: 0.94rem;
+    padding: 14px 25px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro__cta-link {
+    padding: 14px 32px;
+  }
+}
+
+.intro__cta-text {
+  color: #a0a1ac;
+  font-size: 0.77rem;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 769px) {
+  .intro__cta-text {
+    font-size: 0.88rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
