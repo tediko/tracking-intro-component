@@ -14,18 +14,18 @@
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt=""></a>
-        <nav class="header__nav" data-nav>
-          <ul class="header__nav-list">
+        <nav class="header__nav">
+          <button class="header__nav-menu" aria-label="toggle menu" aria-expanded="false" aria-controls="menu-list" data-hamburger>
+            <span class="header__nav-menu-hamburger" aria-hidden="true"></span>
+          </button>
+          <ul id="menu-list" class="header__nav-list" data-nav>
             <li class="header__nav-item"><a href="#" class="header__nav-link">Product</a></li>
             <li class="header__nav-item"><a href="#" class="header__nav-link">Features</a></li>
             <li class="header__nav-item"><a href="#" class="header__nav-link">Pricing</a></li>
-            <li class="header__nav-item"><span class="header__nav-divider"></span></li>
+            <li class="header__nav-item" aria-hidden="true"><span class="header__nav-divider"></span></li>
             <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--gray">Login</a></li>
           </ul>
         </nav>
-        <button class="header__hamburger-menu" aria-label="toggle menu" data-hamburger>
-          <span class="header__hamburger" aria-hidden="true"></span>
-        </button>
       </div>
     </header>
 
