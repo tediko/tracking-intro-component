@@ -132,6 +132,7 @@
         border: none;
         background: transparent;
         cursor: pointer;
+        overflow: hidden;
 
         &:focus {
             outline-offset: 5px;
