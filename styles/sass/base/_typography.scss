@@ -9,11 +9,11 @@ body {
     position: relative; 
     min-height: 100vh;
     font-family: $ff-primary;
-    padding: 0 32px;
+    padding: 48px 32px 48px 32px;
     overflow-x: hidden;
 
     @media (min-width: 880px) {
-        padding: 0 64px;
+        padding: 64px;
     }
 }
 
