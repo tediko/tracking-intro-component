@@ -292,6 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 769px) {
   .intro__heading {
+    margin-bottom: 32px;
     font-size: 3.44rem;
     line-height: 64px;
   }
