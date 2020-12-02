@@ -55,6 +55,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 48px auto 65px auto;
 }
 
+@media (min-width: 880px) {
+  .component-container {
+    margin: 64px auto 65px auto;
+  }
+}
+
 .header__container {
   position: relative;
   display: flex;
