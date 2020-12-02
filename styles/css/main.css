@@ -52,13 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .component-container {
   max-width: 1110px;
-  margin: 48px auto 65px auto;
-}
-
-@media (min-width: 880px) {
-  .component-container {
-    margin: 64px auto 65px auto;
-  }
+  margin: 0 auto;
 }
 
 .header__container {

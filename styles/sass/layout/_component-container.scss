@@ -1,8 +1,4 @@
 .component-container {
     max-width: 1110px;
-    margin: 48px auto 65px auto;
-    
-    @media (min-width: 880px) {
-        margin: 64px auto 65px auto;
-    }
+    margin: 0 auto;
 }
