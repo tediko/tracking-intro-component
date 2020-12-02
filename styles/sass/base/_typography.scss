@@ -11,6 +11,10 @@ body {
     font-family: $ff-primary;
     padding: 0 32px;
     overflow-x: hidden;
+
+    @media (min-width: 880px) {
+        padding: 0 64px;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
