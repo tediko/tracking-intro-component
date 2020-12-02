@@ -405,4 +405,32 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.88rem;
   }
 }
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #a0a1ac;
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.footer__attribution {
+  text-align: center;
+}
+
+.footer a {
+  color: #5b5f71;
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ff5c5c;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $c-blue-grayish;
+    font-size: 0.6rem;
+    font-family: sans-serif;
+    font-weight: 600;
+
+    &__attribution {
+        text-align: center;
+    }
+
+    a {
+        color: $c-blue-grayish-dark;
+        text-decoration: none;
+        transition: color 250ms ease-in;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $c-red;
+    }
+}
