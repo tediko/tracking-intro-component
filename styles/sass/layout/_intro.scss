@@ -104,8 +104,31 @@
         letter-spacing: 1px;
 
         @media (min-width: 769px) {
+            position: relative;
             font-size: 0.94rem;
             padding: 14px 25px;
+            z-index: 1;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background: lighten($c-red, 5);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 6px;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 250ms ease-in;
+            }
+            
+            &:hover::before {
+                transform: scaleX(1);               
+                transform-origin: left;
+            }
         }
 
         @media (min-width: 1000px) {

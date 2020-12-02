@@ -361,8 +361,29 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 769px) {
   .intro__cta-link {
+    position: relative;
     font-size: 0.94rem;
     padding: 14px 25px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .intro__cta-link::before {
+    position: absolute;
+    content: '';
+    background: #ff7575;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+  .intro__cta-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
 
