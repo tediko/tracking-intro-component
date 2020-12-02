@@ -1,0 +1,17 @@
+@keyframes nav-in {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes nav-out {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100vw;
+    }
+}
