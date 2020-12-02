@@ -306,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   .intro__hero {
     order: 2;
     margin: 46px 0 0 28px;
+    animation: hero-slide-right 1000ms ease-in;
   }
   .intro__hero img {
     width: initial;
@@ -323,6 +324,7 @@ h1, h2, h3, h4, h5, h6 {
   .intro__content {
     margin-top: 96px;
     flex: 1 0 50%;
+    animation: content-slide-left 1000ms ease-in;
   }
 }
 

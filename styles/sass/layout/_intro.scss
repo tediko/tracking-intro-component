@@ -21,6 +21,7 @@
         @media (min-width: 769px) {
             order: 2;
             margin: 46px 0 0 28px;
+            animation: hero-slide-right 1000ms ease-in;
 
             img {
                 width: initial;
@@ -37,6 +38,7 @@
         @media (min-width: 769px) {
             margin-top: 96px;
             flex: 1 0 50%;
+            animation: content-slide-left 1000ms ease-in;
         }
     }
 
