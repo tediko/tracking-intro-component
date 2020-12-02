@@ -47,6 +47,18 @@ body {
   }
 }
 
+body::before {
+  position: absolute;
+  content: '';
+  width: 49%;
+  height: 425px;
+  top: 0;
+  right: 0;
+  background: #eef3f6;
+  border-bottom-left-radius: 55px;
+  z-index: -1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Barlow Condensed", sans-serif;
 }

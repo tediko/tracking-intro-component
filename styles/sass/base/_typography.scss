@@ -16,6 +16,18 @@ body {
     @media (min-width: 880px) {
         padding: 64px;
     }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 49%;
+        height: 425px;
+        top: 0;
+        right: 0;
+        background: $c-blue-grayish-light;
+        border-bottom-left-radius: 55px;
+        z-index: -1;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
