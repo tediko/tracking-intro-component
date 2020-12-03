@@ -1,14 +1,12 @@
 .footer {
-    position: absolute;
     display: flex;
     justify-content: center;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     color: $c-blue-grayish;
     font-size: 0.6rem;
     font-family: sans-serif;
     font-weight: 600;
+    padding: 1rem;
+    margin-top: 4rem;
 
     &__attribution {
         text-align: center;
