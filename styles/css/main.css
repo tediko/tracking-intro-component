@@ -392,6 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__cta {
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -405,6 +406,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   border-radius: 6px;
   letter-spacing: 1px;
+}
+
+.intro__cta-link:focus {
+  outline-offset: 5px;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 769px) {
@@ -445,6 +451,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #a0a1ac;
   font-size: 0.77rem;
   letter-spacing: 4px;
+  margin: 7px 0;
 }
 
 @media (min-width: 769px) {

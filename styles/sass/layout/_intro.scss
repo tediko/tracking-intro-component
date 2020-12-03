@@ -91,6 +91,7 @@
 
     &__cta {
         display: flex;
+        flex-flow: wrap;
         align-items: center;
         font-family: $ff-secondary;
     }
@@ -104,6 +105,11 @@
         text-decoration: none;
         border-radius: 6px;
         letter-spacing: 1px;
+
+        &:focus {
+            outline-offset: 5px;
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+        }
 
         @media (min-width: 769px) {
             position: relative;
@@ -142,6 +148,7 @@
         color: $c-blue-grayish;
         font-size: 0.77rem;
         letter-spacing: 4px;
+        margin: 7px 0;
 
         @media (min-width: 769px) {
             font-size: 0.88rem;
